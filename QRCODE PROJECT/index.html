@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhonePe QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>📌 Scan & Pay via PhonePe</h2>
+      <input
+        type="text"
+        id="upi_id"
+        placeholder="Enter UPI ID (9608246409@ybl)"
+      />
+      <input type="text" id="amount" placeholder="Enter Amount (INR)" />
+      <button onclick="generateQR()">Generate QR Code</button>
+      <div id="qrCode"></div>
+      <footer>
+        <p class="footer">Created by Anuj Kumar @ 2025</p>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
